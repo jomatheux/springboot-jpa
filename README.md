@@ -40,6 +40,15 @@ spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
 
 ```
+
+No arquivo `application.properties`, configure as credenciais do profile que você irá utilizar:
+
+```properties
+spring.application.name=java-spring-project
+spring.profiles.active=(perfil "dev" ou "test")
+spring.jpa.open-in-view=true
+
+```
 ###Executando a Aplicação:
 Clone o repositório:
 
