@@ -58,10 +58,10 @@ Navegue até o diretório do projeto:
 
 cd ecommerce-api
 
-Compile e rode a aplicação:
+Compile e rode a aplicação abrindo o terminal dentro da pasta do projeto usando os comandos:
 
-mvn clean install</br>
-mvn spring-boot:run
+1. mvn clean install</br>
+2. mvn spring-boot:run
 
 ###Documentação da API:
 -a documentação dos endpoints estará disponível via Swagger em:
