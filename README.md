@@ -45,7 +45,7 @@ No arquivo `application.properties`, configure as credenciais do profile que voc
 
 ```properties
 spring.application.name=java-spring-project
-spring.profiles.active=(perfil "dev" ou "test")
+spring.profiles.active=(profile "dev" ou "test")
 spring.jpa.open-in-view=true
 
 ```
