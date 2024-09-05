@@ -60,7 +60,7 @@ cd ecommerce-api
 
 Compile e rode a aplicação:
 
-mvn clean install
+mvn clean install</br>
 mvn spring-boot:run
 
 ###Documentação da API:
