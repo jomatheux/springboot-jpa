@@ -10,6 +10,10 @@
 - **PostgreSQL**: Banco de dados principal.
 - **H2**: Banco de dados em memória para testes.
 
+## Modelo de Domínio
+![image](https://github.com/user-attachments/assets/b16f15fd-d739-442f-b15f-0d474f9f7949)
+
+
 ## Configuração do Projeto
 
 ### Pré-requisitos
@@ -49,7 +53,7 @@ spring.profiles.active=(profile "dev" ou "test")
 spring.jpa.open-in-view=true
 
 ```
-###Executando a Aplicação:
+##Executando a Aplicação:
 Clone o repositório:
 
 git clone https://github.com/seu-usuario/ecommerce-api.git
@@ -63,12 +67,12 @@ Compile e rode a aplicação abrindo o terminal dentro da pasta do projeto usand
 1. mvn clean install</br>
 2. mvn spring-boot:run
 
-###Documentação da API:
+##Documentação da API:
 -a documentação dos endpoints estará disponível via Swagger em:
 
 -http://localhost:8080/swagger-ui.html
 
-###Contribuição:
+##Contribuição:
 
 1. Faça um fork do projeto.
 2. Crie uma branch para sua feature (git checkout -b feature/nova-feature).
@@ -76,7 +80,7 @@ Compile e rode a aplicação abrindo o terminal dentro da pasta do projeto usand
 4. Faça o push para a branch (git push origin feature/nova-feature).
 5. Abra um Pull Request.
 
-###Licença:
+##Licença:
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
