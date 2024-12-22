@@ -57,19 +57,36 @@ spring.jpa.open-in-view=true
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/ecommerce-api.git
+git clone https://github.com/seu-usuario/springboot-jpa.git
 ```
 
 Navegue até o diretório do projeto:
 
 ```bash
-cd ecommerce-api
+cd springboot-jpa
 ```
 
 Compile e rode a aplicação abrindo o terminal dentro da pasta do projeto usando os comandos:
 
 1. `mvn clean install`  
 2. `mvn spring-boot:run`
+
+## Caso Esteja usando o Docker
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/springboot-jpa.git
+```
+
+Navegue até o diretório do projeto:
+
+```bash
+cd springboot-jpa
+```
+Execute o comando:
+
+1. `docker-compose up --build`
 
 ## Documentação da API
 
