@@ -1,6 +1,6 @@
 # E-commerce API
 
----Este projeto é uma API de e-commerce desenvolvida com Spring Boot. A API permite gerenciar produtos, pedidos e usuários, utilizando PostgreSQL como banco de dados principal e H2 para testes.
+Este projeto é uma API de e-commerce desenvolvida com Spring Boot. A API permite gerenciar produtos, pedidos e usuários, utilizando PostgreSQL como banco de dados principal e H2 para testes.
 
 ## Tecnologias Utilizadas
 
@@ -11,8 +11,8 @@
 - **H2**: Banco de dados em memória para testes.
 
 ## Modelo de Domínio
-![image](https://github.com/user-attachments/assets/b16f15fd-d739-442f-b15f-0d474f9f7949)
 
+![Modelo de Domínio](https://github.com/user-attachments/assets/b16f15fd-d739-442f-b15f-0d474f9f7949)
 
 ## Configuração do Projeto
 
@@ -31,8 +31,8 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/seu_banco_de_dados
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 spring.jpa.hibernate.ddl-auto=update
-
 ```
+
 No arquivo `application-test.properties`, configure as credenciais do Banco H2:
 
 ```properties
@@ -42,7 +42,6 @@ spring.datasource.username=sa
 spring.datasource.password=password
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
-
 ```
 
 No arquivo `application.properties`, configure as credenciais do profile que você irá utilizar:
@@ -51,41 +50,54 @@ No arquivo `application.properties`, configure as credenciais do profile que voc
 spring.application.name=java-spring-project
 spring.profiles.active=(profile "dev" ou "test")
 spring.jpa.open-in-view=true
-
 ```
-##Executando a Aplicação:
+
+## Executando a Aplicação
+
 Clone o repositório:
 
+```bash
 git clone https://github.com/seu-usuario/ecommerce-api.git
+```
 
 Navegue até o diretório do projeto:
 
+```bash
 cd ecommerce-api
+```
 
 Compile e rode a aplicação abrindo o terminal dentro da pasta do projeto usando os comandos:
 
-1. mvn clean install</br>
-2. mvn spring-boot:run
+1. `mvn clean install`  
+2. `mvn spring-boot:run`
 
-##Documentação da API:
--a documentação dos endpoints estará disponível via Swagger em:
+## Documentação da API
 
--http://localhost:8080/swagger-ui.html
+A documentação dos endpoints estará disponível via Swagger em:
 
-##Contribuição:
+- [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
-1. Faça um fork do projeto.
-2. Crie uma branch para sua feature (git checkout -b feature/nova-feature).
-3. Commit suas mudanças (git commit -m 'Adiciona nova feature').
-4. Faça o push para a branch (git push origin feature/nova-feature).
+## Contribuição
+
+1. Faça um fork do projeto.  
+2. Crie uma branch para sua feature:  
+   ```bash
+   git checkout -b feature/nova-feature
+   ```
+3. Commit suas mudanças:  
+   ```bash
+   git commit -m 'Adiciona nova feature'
+   ```
+4. Faça o push para a branch:  
+   ```bash
+   git push origin feature/nova-feature
+   ```
 5. Abra um Pull Request.
 
-##Licença:
+## Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-Espero que isso ajude! Se precisar de mais alguma coisa, é só avisar. 😊
+---
 
-
-
-
+Espero que isso resolva o problema! Se precisar de mais ajustes, é só avisar. 😊
