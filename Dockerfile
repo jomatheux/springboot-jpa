@@ -1,10 +1,23 @@
-FROM openjdk:17-jdk-slim
+# Etapa de construção do JAR
+FROM maven:3.8-openjdk-17 AS builder
 
 # Diretório de trabalho no container
 WORKDIR /app
 
-# Copiar o JAR gerado pela aplicação para o container
-COPY target/java-spring-project-0.0.1-SNAPSHOT.jar app.jar
+# Copiar os arquivos do projeto para o container
+COPY . .
+
+# Rodar o build do Maven
+RUN mvn clean package -DskipTests
+
+# Etapa final para execução
+FROM openjdk:17-jdk-slim-buster
+
+# Diretório de trabalho no container
+WORKDIR /app
+
+# Copiar o JAR gerado da etapa anterior
+COPY --from=builder /app/target/*.jar app.jar
 
 # Expor a porta 8080
 EXPOSE 8080
