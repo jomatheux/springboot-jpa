@@ -86,7 +86,9 @@ cd springboot-jpa
 ```
 Execute o comando:
 
-1. `docker-compose up --build`
+```bash
+docker-compose up --build
+```
 
 ## Documentação da API
 
