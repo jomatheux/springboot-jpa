@@ -113,10 +113,4 @@ A documentação dos endpoints estará disponível via Swagger em:
    ```
 5. Abra um Pull Request.
 
-## Licença
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
----
-
-Espero que isso resolva o problema! Se precisar de mais ajustes, é só avisar. 😊
